@@ -36,7 +36,7 @@ router.use('/api', customerRoutes);
 // router.use('/api', authRoutes);
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/Company').then(() => {
+mongoose.connect('mongodb+srv://modal:12301230@cluster0.hdgpi4p.mongodb.net/bronxCompany').then(() => {
     console.log('database connected');
 }).catch(err => {
     console.error('Error connecting to MongoDB:', err);
